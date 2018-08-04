@@ -17,7 +17,7 @@ app.use(cookieSession({
 app.use(passport.initialize());
 app.use(passport.session());
 
-require('./routes/authRoutes')(app); // return function and imediately invoke/call the functioni
+require('./routes/authRoutes')(app); // return function and imediately invoke/call the function
 app.use('/profile/', profileRoutes); // another way to define route
 
 
